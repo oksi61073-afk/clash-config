@@ -1,0 +1,44 @@
+proxies:
+
+- name: TROJAN-ZOOM
+  type: trojan
+  server: sg-melbi.wc-webkuy.web.id
+  port: 443
+  password: 80a0b683-2144-477b-89f6-cadc2b47c37e
+  udp: true
+  sni: zoom.us
+  alpn:
+    - h2
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan
+
+- name: TROJAN-GOOGLE
+  type: trojan
+  server: sg-melbi.wc-webkuy.web.id
+  port: 443
+  password: 80a0b683-2144-477b-89f6-cadc2b47c37e
+  udp: true
+  sni: meet.google.com
+  alpn:
+    - h2
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan
+
+- name: VMESS-GRPC
+  type: vmess
+  server: leas.jstvip.fun
+  port: 443
+  uuid: 1c413667-72e6-44e3-b701-9ff0d86c73c4
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: zoom.us
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vmess
