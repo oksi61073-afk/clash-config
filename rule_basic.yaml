@@ -1,0 +1,7 @@
+payload:
+  - DOMAIN-SUFFIX,google.com
+  - DOMAIN-SUFFIX,youtube.com
+  - DOMAIN-SUFFIX,facebook.com
+  - DOMAIN-SUFFIX,tiktok.com
+  - DOMAIN-SUFFIX,instagram.com
+  - DOMAIN-SUFFIX,whatsapp.com
